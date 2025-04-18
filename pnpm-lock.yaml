@@ -8,6 +8,16 @@ importers:
 
   .: {}
 
+  packages/api:
+    dependencies:
+      hono:
+        specifier: ^4.7.7
+        version: 4.7.7
+    devDependencies:
+      wrangler:
+        specifier: ^4.4.0
+        version: 4.12.0(@cloudflare/workers-types@4.20250418.0)
+
   packages/web:
     dependencies:
       next:
@@ -2478,6 +2488,10 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  hono@4.7.7:
+    resolution: {integrity: sha512-2PCpQRbN87Crty8/L/7akZN3UyZIAopSoRxCwRbJgUuV1+MHNFHzYFxZTg4v/03cXUm+jce/qa2VSBZpKBm3Qw==}
+    engines: {node: '>=16.9.0'}
 
   http-errors@2.0.0:
     resolution: {integrity: sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ==}
@@ -6807,6 +6821,8 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  hono@4.7.7: {}
 
   http-errors@2.0.0:
     dependencies:
